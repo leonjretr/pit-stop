@@ -44,7 +44,11 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
     return (
         <html lang="en">
         <body
-            className={`antialiased`}
+            className={`antialiased ${poppins.variable}
+        ${nunito.variable}
+        ${monomakh.variable}
+        ${quicksand.variable}
+        ${philosopher.variable}`}
         >
         <Wrapper>
             <Header/>
