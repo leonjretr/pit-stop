@@ -1,3 +1,4 @@
+"use client"
 import React, {FC} from 'react';
 import Headroom from "react-headroom";
 
