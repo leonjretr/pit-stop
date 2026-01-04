@@ -5,13 +5,13 @@ const Header = () => {
     
     return (
         <div className={"flex justify-between w-full h-20 p-3 bg-brand-lightgold text-brand-coffee font-poppins font-bold"}>
-            <div className={"flex items-center"}>
+            <button className={"flex items-center"}>
                     <Image src={"/images/portafilter.png"} alt={"Portafilter"}
-                           height={"60"} width={"60"}/>
-                <h1 className={"font-poppins text-xl px-12 w-4"}>
-                    pit stop
-                </h1>
-            </div>
+                           height={"40"} width={"40"}/>
+                <div className={"flex text-start font-poppins text-xl p-2 leading-[1.2]"}>
+                    pit<br/> stop
+                </div>
+            </button>
         </div>
     );
 };

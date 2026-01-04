@@ -20,12 +20,12 @@ const nunito = Nunito({
     display: "swap",
     variable: "--font-nunito", // 👈 important
 });
-const monomakh = Monomakh({
-    subsets: ["latin"],
-    weight: ["400"], // choose what you need
-    display: "swap",
-    variable: "--font-monomakh", // 👈 important
-});
+// const monomakh = Monomakh({
+//     subsets: ["latin"],
+//     weight: ["400"], // choose what you need
+//     display: "swap",
+//     variable: "--font-monomakh", // 👈 important
+// });
 const quicksand = Quicksand({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"], // choose what you need
@@ -46,7 +46,6 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         <body
             className={`antialiased ${poppins.variable}
         ${nunito.variable}
-        ${monomakh.variable}
         ${quicksand.variable}
         ${philosopher.variable}`}
         >
