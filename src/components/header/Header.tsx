@@ -12,6 +12,7 @@ const Header = () => {
                     pit<br/> stop
                 </div>
             </button>
+            <Button>Hello</Button>
         </div>
     );
 };
