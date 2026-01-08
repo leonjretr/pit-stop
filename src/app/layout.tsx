@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import Wrapper from "@/components/wrapper/Wrapper";
 import Header from "@/components/header/Header";
-import {Poppins, Nunito, Philosopher, Quicksand, Monomakh} from "next/font/google";
+import {Poppins, Nunito, Philosopher, Quicksand} from "next/font/google";
 
 export const metadata: Metadata = {
     title: "Create Next App",
