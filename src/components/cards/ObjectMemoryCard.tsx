@@ -1,15 +1,19 @@
+"use client"
+import { motion } from 'motion/react';
 import React from 'react';
 
 const ObjectMemoryCard = () => {
     return (
-        <div className={"flex flex-col justify-center w-96 h-16 gap-3 border-y-2 hover:border-x-2 hover:border-y-0 border-brand-walnut p-2 font-nunito"}>
+        <motion.div
+            whileHover={{scale:1.1}}
+            className={"flex flex-col justify-center cursor-pointer w-96 gap-3 border-2 rounded-lg border-brand-walnut p-2 font-nunito"}>
             <div className={"font-semibold text-lg"}>
                 My first memory
             </div>
             <div className={"text-sm"}>
                 Description of the first memory!
             </div>
-        </div>
+        </motion.div>
     );
 };
 
