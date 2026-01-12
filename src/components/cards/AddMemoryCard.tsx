@@ -67,7 +67,7 @@ const AddMemoryCard = () => {
                             Adding a new memory
                         </div>
                         <div className={"text-sm"}>
-                            Tell a story of your object: whether it&#39;s a pen gifted by your father, or a camera you
+                            Tell a story: whether it&#39;s a pen gifted by your father, or a camera you
                             bought last week - doesn&#39;t matter. Any story is great.
                         </div>
                     </div>
