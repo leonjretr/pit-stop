@@ -45,9 +45,9 @@ const AddMemoryCard = () => {
                     </DialogHeader>
                     <DialogFooter>
                         <DialogClose>
-                            <button className={""}>
+                            <div className={"cursor-pointer"}>
                                 Cancel
-                            </button>
+                            </div>
                         </DialogClose>
 
                     </DialogFooter>
