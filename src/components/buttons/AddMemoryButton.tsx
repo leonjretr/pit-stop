@@ -12,7 +12,7 @@ const AddMemoryButton = () => {
                     <motion.button
                         whileHover={{scale: 1.1}}
                         whileTap={{scale: 0.95}}
-                        className={"flex items-center bg-blue-500 hover:bg-blue-700 justify-center w-12 cursor-pointer h-10 border-2 border-brand-walnut rounded-lg"}>
+                        className={"flex items-center justify-center w-12 cursor-pointer h-10 border-2 border-brand-walnut rounded-lg"}>
                         <IoAdd className={"text-3xl"}/>
                     </motion.button>
                 </Link>
