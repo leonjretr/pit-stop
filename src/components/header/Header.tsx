@@ -4,7 +4,10 @@ const Header = () => {
 
     return (
         <div
-            className={"flex justify-center w-full p-4 bg-white text-brand-coffee border-b-2 border-solid border-brand-coffee"}>
+            className={"flex justify-between items-center w-full p-4 bg-white text-brand-coffee border-b-2 border-solid border-brand-coffee"}>
+            <div>
+                Login
+            </div>
             <div>
                 <button
                     className={"cursor-pointer justify-self-center"}>
@@ -17,6 +20,9 @@ const Header = () => {
                         </div>
                     </div>
                 </button>
+            </div>
+            <div>
+                Sign up
             </div>
         </div>
     );
