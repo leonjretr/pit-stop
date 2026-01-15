@@ -18,7 +18,7 @@ const ObjectMemoryCard = () => {
                 <DialogTrigger asChild>
                     <motion.div
                         whileHover={{scale: 1.1}}
-                        className={"flex flex-col justify-center cursor-pointer w-96 gap-3 border-2 rounded-lg border-brand-walnut p-2 font-nunito"}>
+                        className={"flex flex-col justify-center cursor-pointer w-96 gap-3 border-2 rounded-lg border-brand-walnut p-2 font-poppins"}>
                         <div className={"font-semibold text-lg"}>
                             My first memory
                         </div>
