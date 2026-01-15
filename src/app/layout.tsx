@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import Wrapper from "@/components/wrapper/Wrapper";
 import Header from "@/components/header/Header";
-import {Poppins, Nunito, Philosopher, Quicksand} from "next/font/google";
+import {Poppins, Nunito, Philosopher, Quicksand, Inter} from "next/font/google";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -15,6 +15,13 @@ const poppins = Poppins({
     variable: "--font-poppins", // 👈 important
 });
 const nunito = Nunito({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"], // choose what you need
+    display: "swap",
+    variable: "--font-nunito", // 👈 important
+});
+
+const inter = Inter({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"], // choose what you need
     display: "swap",
@@ -47,11 +54,14 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             className={`antialiased ${poppins.variable}
         ${nunito.variable}
         ${quicksand.variable}
-        ${philosopher.variable}`}
+        ${philosopher.variable} 
+        ${inter.variable}`}
+
         >
-        <Wrapper>
-            <Header/>
-        </Wrapper>
+        {/*<Wrapper>*/}
+
+        {/*</Wrapper>*/}
+        <Header/>
         {children}
         </body>
         </html>
