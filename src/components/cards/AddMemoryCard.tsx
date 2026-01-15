@@ -17,6 +17,8 @@ import {
     DialogTitle,
     DialogTrigger,
 } from '../ui/dialog';
+import {Field, FieldGroup, FieldLabel, FieldSet, FieldDescription } from '../ui/field';
+import {Input } from '../ui/input';
 
 const AddMemoryCard = () => {
     return (
@@ -35,7 +37,7 @@ const AddMemoryCard = () => {
                         <DialogHeader>
                             <DialogTitle>
                                 <div
-                                    className={"flex flex-col items-center justify-center font-poppins font-semibold text-2xl"}>
+                                    className={"flex flex-col items-center justify-center font-inter font-semibold text-2xl"}>
                                     Adding a memory
                                 </div>
                             </DialogTitle>
@@ -44,16 +46,24 @@ const AddMemoryCard = () => {
                                 done.
                             </DialogDescription>
                         </DialogHeader>
-                        <div className="grid gap-4">
-                            <div className="grid gap-3">
-                                <label htmlFor="name-1">Name</label>
-                                <input id="name-1" name="name" defaultValue="Pedro Duarte" />
-                            </div>
-                            <div className="grid gap-3">
-                                <label htmlFor="username-1">Username</label>
-                                <input id="username-1" name="username" defaultValue="@peduarte" />
-                            </div>
-                        </div>
+                        <FieldSet>
+                            <FieldGroup>
+                                <Field>
+                                    <FieldLabel htmlFor="username">Username</FieldLabel>
+                                    <Input id="username" type="text" placeholder="Max Leiter" />
+                                    <FieldDescription>
+                                        Choose a unique username for your account.
+                                    </FieldDescription>
+                                </Field>
+                                <Field>
+                                    <FieldLabel htmlFor="password">Password</FieldLabel>
+                                    <FieldDescription>
+                                        Must be at least 8 characters long.
+                                    </FieldDescription>
+                                    <Input id="password" type="password" placeholder="••••••••" />
+                                </Field>
+                            </FieldGroup>
+                        </FieldSet>
                         <DialogFooter>
                             <DialogClose>
                                 <div
