@@ -1,5 +1,4 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+
 
 @theme {
     --color-brand-walnut: #5d3a00;
@@ -158,5 +157,6 @@
 
 }
 
-
+@import "tailwindcss";
+@import "tw-animate-css";
 

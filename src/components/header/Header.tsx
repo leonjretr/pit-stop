@@ -1,14 +1,18 @@
 import React from 'react';
+import LoginButton from "@/components/buttons/LoginButton";
+import SignUpButton from '../buttons/SignUpButton';
 
 const Header = () => {
 
     return (
         <div
-            className={"flex justify-between items-center w-full p-4 bg-white text-brand-coffee border-b-2 border-solid border-brand-coffee"}>
-            <div>
-                Login
+            className={"flex justify-between items-center w-full px-3 py-4 bg-white text-brand-coffee border-b-2 border-solid border-brand-coffee"}>
+            <div className="flex items-center">
+                <div className={"px-3 font-medium font-poppins italic hover:underline cursor-pointer"}>
+                    project goals
+                </div>
             </div>
-            <div>
+            <div className="flex items-center">
                 <button
                     className={"cursor-pointer justify-self-center"}>
                     <div className={"flex flex-col justify-center"}>
@@ -21,8 +25,9 @@ const Header = () => {
                     </div>
                 </button>
             </div>
-            <div>
-                Sign up
+            <div className="flex items-center gap-x-3">
+                <LoginButton text={"login"}/>
+                <SignUpButton text={"sign up"}/>
             </div>
         </div>
     );
