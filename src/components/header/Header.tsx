@@ -4,11 +4,13 @@ const Header = () => {
 
     return (
         <div
-            className={"flex justify-between items-center w-full p-4 bg-white text-brand-coffee border-b-2 border-solid border-brand-coffee"}>
-            <div>
-                Login
+            className={"flex justify-between items-center w-full px-2 py-4 bg-white text-brand-coffee border-b-2 border-solid border-brand-coffee"}>
+            <div className="flex items-center">
+                <div>
+                    About us
+                </div>
             </div>
-            <div>
+            <div className="flex items-center">
                 <button
                     className={"cursor-pointer justify-self-center"}>
                     <div className={"flex flex-col justify-center"}>
@@ -21,8 +23,13 @@ const Header = () => {
                     </div>
                 </button>
             </div>
-            <div>
-                Sign up
+            <div className="flex items-center gap-x-3">
+                <button>
+                    Login
+                </button>
+                <button>
+                    Sign up
+                </button>
             </div>
         </div>
     );

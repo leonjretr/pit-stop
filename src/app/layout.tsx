@@ -58,10 +58,9 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         ${inter.variable}`}
 
         >
-        {/*<Wrapper>*/}
-
-        {/*</Wrapper>*/}
-        <Header/>
+        <Wrapper>
+            <Header/>
+        </Wrapper>
         {children}
         </body>
         </html>
